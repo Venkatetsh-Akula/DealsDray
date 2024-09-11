@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OTP Verification</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-white">
+    <div class="text-center">
+        <h1 class="text-2xl font-bold mb-2">OTP Verification</h1>
+        <p class="text-gray-500 mb-6">We have sent a unique OTP number to your mobile.</p>
+        <form id="otp-form" action="/DealsDray" method="POST">
+            <div class="flex justify-center space-x-4 mb-6">
+                <input class="w-12 h-12 border border-gray-300 rounded-lg text-center text-xl" maxlength="1" name="otp1" type="text" required/>
+                <input class="w-12 h-12 border border-gray-300 rounded-lg text-center text-xl" maxlength="1" name="otp2" type="text" required/>
+                <input class="w-12 h-12 border border-gray-300 rounded-lg text-center text-xl" maxlength="1" name="otp3" type="text" required/>
+                <input class="w-12 h-12 border border-gray-300 rounded-lg text-center text-xl" maxlength="1" name="otp4" type="text" required/>
+            </div>
+            <button class="text-red-500 font-semibold" type="submit">Verify</button>
+            <button class="text-gray-500 font-semibold" type="button" onclick="resendOtp()">SEND AGAIN</button>
+        </form>
+    </div>
+    <script>
+        function resendOtp() {
+            // Implement resend OTP functionality
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Phone Verification</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-white flex items-center justify-center h-screen">
+    <div class="w-full max-w-xs mx-auto">
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-bold">Phone Verification</h1>
+            <p class="text-gray-500">Enter your phone number to receive an OTP.</p>
+        </div>
+        <form id="phone-form" action="/DealsDray" method="GET">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">
+                Phone
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" name="phone" placeholder="Phone" type="number" required/>
+            <div class="flex justify-center mt-6">
+                <button class="bg-pink-300 text-white font-bold py-2 px-4 rounded-full w-full" type="submit">
+                    SEND CODE
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
